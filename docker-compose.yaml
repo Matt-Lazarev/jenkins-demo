@@ -1,8 +1,8 @@
-# 2d23c4de000b42bf92d9ad8597f7fdc0
+# 45488c4344f441148f607afa27b59cff
 version: '3.9'
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    image: jenkins/jenkins:lts-jdk17
     container_name: jenkins
     privileged: true
     command: ["--httpPort=8090"]
