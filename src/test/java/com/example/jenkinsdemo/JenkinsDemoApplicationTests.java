@@ -20,4 +20,10 @@ class JenkinsDemoApplicationTests {
         log.info("Tests are running...");
         Assertions.assertTrue(true);
     }
+
+    @Test
+    void thirdTest() {
+        log.info("Tests are running...");
+        Assertions.assertTrue(true);
+    }
 }
