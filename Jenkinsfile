@@ -4,6 +4,9 @@ pipeline {
             label 'docker-agent-maven'
         }
     }
+    triggers {
+        pollSCM '* * * * *'
+    }
     stages {
         stage('Prepare') {
             steps {
