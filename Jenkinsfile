@@ -17,18 +17,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir('jenkins-demo'){
-                    echo "Building.."
-                    sh 'mvn package -Dmaven.test.skip'
-                }
+                echo "Building.."
+                sh 'mvn package -Dmaven.test.skip'
             }
         }
         stage('Test') {
             steps {
-                dir('jenkins-demo'){
-                    echo "Testing.."
-                    sh 'mvn test'
-                }
+                echo "Testing.."
+                sh 'mvn test'
             }
         }
     }
