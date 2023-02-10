@@ -15,12 +15,6 @@ pipeline {
                 sh 'mvn --version'
             }
         }
-        stage('Clone_GitHub_Project') {
-            steps {
-                echo "Pulling GitHub project"
-                sh 'git clone https://github.com/Matt-Lazarev/jenkins-demo.git'
-            }
-        }
         stage('Build') {
             steps {
                 dir('jenkins-demo'){
